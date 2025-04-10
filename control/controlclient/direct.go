@@ -122,7 +122,7 @@ type Options struct {
 	ServerURL                  string                             // URL of the tailcontrol server
 	AuthKey                    string                             // optional node auth key for auto registration
 	Clock                      tstime.Clock
-	Hostinfo                   *tailcfg.Hostinfo // non-nil passes ownership, nil means to use default using os.Hostname, etc
+	Hostinfo                   *tailcfg.Hostinfo // non-nil passes ownership, nil means to use default using hostinfo.Hostname, etc
 	DiscoPublicKey             key.DiscoPublic
 	Logf                       logger.Logf
 	HTTPTestClient             *http.Client // optional HTTP client to use (for tests only)
